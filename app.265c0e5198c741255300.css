@@ -1777,7 +1777,11 @@ a {
       right: 0;
       z-index: 3; }
       .qqMusic-control.show .qqMusic-control-content .qqMusic-control-top {
-        position: relative; }
+        position: relative;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 1.0rem;
+            -ms-flex: 0 0 1.0rem;
+                flex: 0 0 1.0rem; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-top .icon-control-down {
           position: absolute;
           left: 0.3rem;
@@ -1794,42 +1798,38 @@ a {
         -webkit-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel {
-          height: 100% !important; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel .slider-frame, .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel .slider-list {
-            height: 100% !important; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one {
-          height: 100%; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer {
-            text-align: center;
-            font-size: 0.32rem;
-            color: #fff;
-            padding-top: 0.3rem; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer:before {
-            content: '';
-            display: inline-block;
-            width: 0.4rem;
-            border-top: 0.02rem solid #fff;
-            vertical-align: 0.12rem;
-            margin-right: 0.2rem; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer:after {
-            content: '';
-            display: inline-block;
-            width: 0.4rem;
-            border-top: 0.02rem solid #fff;
-            vertical-align: 0.12rem;
-            margin-left: 0.2rem; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-cover {
-            width: 4.2rem;
-            height: 4.2rem;
-            border-radius: 50%;
-            margin-top: 1.2rem; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .slider-list {
+          min-height: 7rem !important; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer {
+          text-align: center;
+          font-size: 0.32rem;
+          color: #fff;
+          padding-top: 0.3rem; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer:before {
+          content: '';
+          display: inline-block;
+          width: 0.4rem;
+          border-top: 0.02rem solid #fff;
+          vertical-align: 0.12rem;
+          margin-right: 0.2rem; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer:after {
+          content: '';
+          display: inline-block;
+          width: 0.4rem;
+          border-top: 0.02rem solid #fff;
+          vertical-align: 0.12rem;
+          margin-left: 0.2rem; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-cover {
+          width: 4.2rem;
+          height: 4.2rem;
+          border-radius: 50%;
+          margin-top: 1.2rem; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-two {
           position: relative;
           height: 100%;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
-          padding-top: 0.6rem; }
+          padding-top: 0.2rem; }
           .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-two .lyricList {
             overflow: auto;
             height: 6.3rem;
@@ -1847,12 +1847,19 @@ a {
           -webkit-animation: animationRotate 10s linear infinite;
                   animation: animationRotate 10s linear infinite; }
       .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 4.0rem;
+            -ms-flex: 0 0 4.0rem;
+                flex: 0 0 4.0rem;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         padding-bottom: 0.4rem; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress {
           position: relative;
           margin-top: 0.3rem;
           text-align: center; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime, .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime,
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
             position: absolute;
             color: #8a8a8a;
             font-size: 0.24rem; }
