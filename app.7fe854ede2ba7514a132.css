@@ -1368,7 +1368,7 @@ a {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 6rem;
+  width: 80%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 0.3rem;
@@ -1539,6 +1539,7 @@ a {
       height: 0.5rem; }
     .qqMusic-search-wrapper .qqMusic-search-top .btn-search {
       position: absolute;
+      display: inline-block;
       right: 0.2rem;
       top: 0.2rem;
       color: #dbf3e8; }
