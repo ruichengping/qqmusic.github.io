@@ -1775,7 +1775,8 @@ a {
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 3; }
+      z-index: 3;
+      overflow: auto; }
       .qqMusic-control.show .qqMusic-control-content .qqMusic-control-top {
         position: relative;
         -webkit-box-flex: 0;
@@ -1799,7 +1800,7 @@ a {
             -ms-flex: 1;
                 flex: 1; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .slider-list {
-          min-height: 7rem !important; }
+          min-height: 7.4rem !important; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer {
           text-align: center;
           font-size: 0.32rem;
