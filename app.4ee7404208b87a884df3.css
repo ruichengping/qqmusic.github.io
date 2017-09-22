@@ -1761,6 +1761,15 @@ a {
             transform: translateY(0);
     z-index: 1; }
     .qqMusic-control.show .qqMusic-control-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -1780,9 +1789,17 @@ a {
           color: #fff;
           padding-top: 0.3rem; }
       .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle {
-        text-align: center; }
+        text-align: center;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel {
+          height: 100% !important; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel .slider-frame, .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .am-carousel .slider-list {
+            height: 100% !important; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one {
-          height: 8rem; }
+          height: 100%; }
           .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-one .music-signer {
             text-align: center;
             font-size: 0.32rem;
@@ -1809,6 +1826,9 @@ a {
             margin-top: 1.2rem; }
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-two {
           position: relative;
+          height: 100%;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
           padding-top: 0.6rem; }
           .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle .carousel-two .lyricList {
             overflow: auto;
@@ -1826,60 +1846,62 @@ a {
         .qqMusic-control.show .qqMusic-control-content .qqMusic-control-middle.active .music-cover {
           -webkit-animation: animationRotate 10s linear infinite;
                   animation: animationRotate 10s linear infinite; }
-      .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress {
-        position: relative;
-        margin-top: 0.3rem;
-        text-align: center; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime, .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
-          position: absolute;
-          color: #8a8a8a;
-          font-size: 0.24rem; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime {
-          left: 0.5rem;
-          top: 0.14rem; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
-          right: 0.5rem;
-          top: 0.14rem; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper {
+      .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom {
+        padding-bottom: 0.4rem; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress {
           position: relative;
-          display: inline-block;
-          width: 4.0rem;
-          height: 0.02rem;
-          background-color: #e6e6e6; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper .progress-inner {
-            height: 0.02rem;
-            background-color: #31c37c; }
-          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper .progress-btn {
+          margin-top: 0.3rem;
+          text-align: center; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime, .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
             position: absolute;
-            top: -0.16rem;
-            left: 0;
-            width: 0.3rem;
-            height: 0.3rem;
-            border-radius: 50%;
-            background-color: #31c37c; }
-      .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 1.8rem;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        margin-top: 0.5rem; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .status {
-          width: 1.4rem;
-          height: 1.4rem;
-          margin: 0 0.3rem; }
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .prev,
-        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .next {
-          width: 0.8rem;
-          height: 0.8rem; }
+            color: #8a8a8a;
+            font-size: 0.24rem; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .currentPlayTime {
+            left: 0.5rem;
+            top: 0.14rem; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .totalPlayTime {
+            right: 0.5rem;
+            top: 0.14rem; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 4.0rem;
+            height: 0.02rem;
+            background-color: #e6e6e6; }
+            .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper .progress-inner {
+              height: 0.02rem;
+              background-color: #31c37c; }
+            .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-progress .progress-wrapper .progress-btn {
+              position: absolute;
+              top: -0.16rem;
+              left: 0;
+              width: 0.3rem;
+              height: 0.3rem;
+              border-radius: 50%;
+              background-color: #31c37c; }
+        .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          height: 1.8rem;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin-top: 0.5rem; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .status {
+            width: 1.4rem;
+            height: 1.4rem;
+            margin: 0 0.3rem; }
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .prev,
+          .qqMusic-control.show .qqMusic-control-content .qqMusic-control-bottom .qqMusic-control-btns .next {
+            width: 0.8rem;
+            height: 0.8rem; }
     .qqMusic-control.show .qqMusic-control-bg {
       position: absolute;
       top: 0;
